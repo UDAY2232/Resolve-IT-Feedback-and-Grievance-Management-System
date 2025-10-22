@@ -1,0 +1,149 @@
+*{
+  .linksto{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb; 
+}
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-container {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  border-style: solid none none solid;
+  border-color: #cccccc; 
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 6px 6px 12px rgba(0,0,0,0.08);
+  background-color: #ffffff; 
+}
+
+h2 {
+  font-size: 26px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  text-align: center;
+  line-height: 28px;
+  color: #1a1a1a; 
+}
+
+p {
+  font-weight: bold;
+  font-size: 16px;
+  color: #555555;
+}
+
+button {
+  background-color: #ff6f00;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, opacity 0.3s;
+}
+
+button:hover {
+  background-color: #e65100; 
+  color: #ffffff;
+}
+
+button:active{
+  opacity: 0.5;
+}
+
+label {
+  font-weight: bold;
+  color: #555555;
+  display: block;       
+  text-align: left;     
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 20px 0;
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+.message {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #e0f2f1;
+  color: #00796b;
+  border: 1px solid #00796b;
+}
+
+.message.error {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #c62828;
+}
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.popup-box p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.popup-box button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-box button:hover {
+  background: #45a049;
+}

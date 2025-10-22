@@ -1,0 +1,68 @@
+.senior-dashboard {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+}
+
+.top-section {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-welcome {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.dashboard-subtext {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 6px;
+}
+
+.overview-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+  margin: 25px 0 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.overview-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.overview-card {
+  background: #f9f9ff;
+  padding: 18px 22px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 122, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #ff7a00;
+}
+
+.overview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(255, 122, 0, 0.2);
+}
+
+.card-title {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.card-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff7a00;
+}

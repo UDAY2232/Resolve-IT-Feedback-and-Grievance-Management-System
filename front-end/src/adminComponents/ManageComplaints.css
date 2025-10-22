@@ -1,0 +1,217 @@
+.manage-complaints-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.complaints-sections-row {
+  display: flex;              /* ✅ places children side by side */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;                  /* spacing between the two sections */
+}
+
+.complaints-section {
+  flex: 1;                    /* equal width */
+  min-width: 300px;           /* prevent shrinking too small */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.complaints-section h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #333;
+  border-bottom: 2px solid #f97316; /* orange underline */
+  padding-bottom: 5px;
+}
+
+.complaints-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.complaint-card-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.complaint-card-horizontal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.complaint-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.complaint-line {
+  font-size: 14px;
+}
+
+.card-labelll {
+  font-weight: 600;
+  margin-right: 6px;
+  color: #444;
+}
+
+.card-valueee {
+  color: #222;
+}
+
+.complaint-status {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.complaint-status.submitted {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+}
+
+.complaint-status.under-review {
+  background: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #60a5fa;
+}
+
+/* Popup styles */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.review-actions {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-actions textarea {
+  width: 97%;           /* full width of container */
+  height: 80px;          /* fixed height */
+  max-height: 120px;     /* optional: prevent too much growth if content exceeds */
+  min-height: 60px;      /* optional: minimum size */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: none;          /* disable manual resizing by the user */
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn.orange { background: #f97316; color: #fff; }
+.btn.orange:hover { background: #ea580c; }
+
+.btn.green { background: #22c55e; color: #fff; }
+.btn.green:hover { background: #16a34a; }
+
+.btn.red { background: #ef4444; color: #fff; }
+.btn.red:hover { background: #dc2626; }
+
+.btn.gray { background: #9ca3af; color: #fff; }
+.btn.gray:hover { background: #6b7280; }
+/* Filter Buttons */
+.filter-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  background: #f3f4f6;
+}
+
+.filter-btn.active {
+  background: #f97316;
+  color: #fff;
+  border-color: #f97316;
+}
+
+
+
+
+
+
+.support-documents {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.support-documents ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.support-documents li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.support-documents .btn.blue {
+  background: #3b82f6;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+
+.support-documents .btn.blue:hover {
+  background: #2563eb;
+}

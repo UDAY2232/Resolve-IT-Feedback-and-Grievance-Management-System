@@ -1,0 +1,134 @@
+.all-complaints-container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.all-complaints-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #131D4F;
+  margin-bottom: 20px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #1e90ff;
+  background-color: white;
+  color: #1e90ff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+/* Complaints List */
+.complaints-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Complaint Card Horizontal */
+.complaint-card-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.complaint-card-horizontal:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Left Side - Complaint Info */
+.complaint-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.complaint-line {
+  display: flex;
+  gap: 6px;
+  font-size: 15px;
+}
+
+.card-labelll {
+  font-weight: 600;
+  color: #131D4F;
+}
+
+.card-valueee {
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Status Badge */
+.complaint-status {
+  min-width: 110px;
+  text-align: center;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  text-transform: capitalize;
+}
+
+/* Status Colors */
+.complaint-status.submitted {
+  background-color: #ffa500;
+}
+
+.complaint-status.under-review {
+  background-color: #1e90ff;
+}
+
+.complaint-status.resolved {
+  background-color: #32cd32;
+}
+
+.complaint-status.rejected {
+  background-color: #ff4500;
+}
+
+/* Responsive */
+@media (max-width: 1440px) {
+  .all-complaints-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .complaint-card-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .complaint-status {
+    align-self: flex-start;
+  }
+}

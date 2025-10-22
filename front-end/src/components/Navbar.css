@@ -1,0 +1,35 @@
+.navbar{
+  display:flex;
+  justify-content: center;
+  color: #131D4F; 
+  background: #f9fafb; 
+  border-bottom: 2px solid orange;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+
+ 
+  .container{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+  
+  .logo{
+      font-size: 32px;
+      font-weight: bold;
+  }
+  .links{
+    display:flex;
+    align-items: center;
+    gap:24px;
+    font-weight: 500;
+
+
+
+  }
+  
+}
